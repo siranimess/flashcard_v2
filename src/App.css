@@ -12,48 +12,66 @@
 
 .container {
   width: 100%;
-  max-width: 750px;
+  max-width: 800px;
   text-align: center;
 }
 
 .badge {
   display: inline-block;
+  background: #e9e8ff;
+  color: #5145cd;
   padding: 8px 16px;
   border-radius: 20px;
-  background-color: #e9e8ff;
-  color: #5145cd;
   font-size: 13px;
   font-weight: bold;
   letter-spacing: 1px;
-  margin-bottom: 10px;
 }
 
 h1 {
-  font-size: 52px;
-  margin: 10px 0;
+  font-size: 50px;
+  margin: 12px 0;
 }
 
 .description {
-  font-size: 18px;
-  color: #626262;
-  max-width: 600px;
-  margin: 0 auto 15px;
+  color: #666;
+  font-size: 17px;
   line-height: 1.6;
+  margin: 0 auto 25px;
+  max-width: 650px;
 }
 
-.card-count {
-  font-size: 17px;
+/* Stats */
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
   margin-bottom: 25px;
 }
 
-.flashcard-area {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.stats div {
+  background: white;
+  border: 1px solid #e6e6e6;
+  border-radius: 14px;
+  padding: 14px;
 }
 
+.stats span {
+  display: block;
+  color: #777;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.stats strong {
+  font-size: 18px;
+}
+
+/* Difficulty */
+
 .difficulty {
-  padding: 7px 16px;
+  display: inline-block;
+  padding: 7px 15px;
   border-radius: 20px;
   font-size: 13px;
   font-weight: bold;
@@ -61,40 +79,45 @@ h1 {
 }
 
 .difficulty.easy {
-  background-color: #daf7e5;
+  background: #daf7e5;
   color: #167846;
 }
 
 .difficulty.medium {
-  background-color: #fff1c7;
+  background: #fff1c7;
   color: #9c6500;
 }
 
 .difficulty.hard {
-  background-color: #ffd9d9;
+  background: #ffd9d9;
   color: #b32828;
 }
 
+/* Flashcard */
+
 .flashcard {
   width: 100%;
-  max-width: 650px;
-  min-height: 330px;
+  min-height: 310px;
   background: white;
   border-radius: 25px;
   border: 2px solid #e7e7e7;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
+  padding: 35px;
+  cursor: pointer;
+
   transition:
     transform 0.3s ease,
-    box-shadow 0.3s ease;
-  padding: 35px;
+    box-shadow 0.3s ease,
+    background 0.3s ease;
 }
 
 .flashcard:hover {
-  transform: translateY(-5px);
+  transform: translateY(-4px);
   box-shadow: 0 18px 35px rgba(0, 0, 0, 0.14);
 }
 
@@ -107,71 +130,195 @@ h1 {
 }
 
 .card-label {
+  color: #756bd0;
   font-size: 12px;
-  letter-spacing: 2px;
   font-weight: bold;
-  color: #7f74d9;
-  margin-bottom: 25px;
+  letter-spacing: 2px;
 }
 
 .flashcard h2 {
-  font-size: 28px;
-  line-height: 1.4;
-  margin: 0 auto;
-  max-width: 540px;
+  max-width: 600px;
+  margin: 30px auto;
+  font-size: 27px;
+  line-height: 1.5;
 }
 
 .flip-text {
   color: #999;
-  margin-top: 30px;
   font-size: 14px;
 }
 
-.next-button {
-  margin-top: 30px;
-  padding: 14px 28px;
-  font-size: 17px;
-  font-weight: bold;
-  border: none;
-  border-radius: 12px;
-  cursor: pointer;
-  background-color: #6759d9;
-  color: white;
-  transition:
-    transform 0.2s ease,
-    background-color 0.2s ease;
+/* Guess area */
+
+.guess-section {
+  margin-top: 28px;
+  background: white;
+  padding: 22px;
+  border-radius: 18px;
+  border: 1px solid #e5e5e5;
 }
 
-.next-button:hover {
-  background-color: #5145cd;
-  transform: translateY(-2px);
+.guess-section label {
+  display: block;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.input-row {
+  display: flex;
+  gap: 10px;
+}
+
+.input-row input {
+  flex: 1;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  font-size: 16px;
+  outline: none;
+}
+
+.input-row input:focus {
+  border-color: #6759d9;
+}
+
+.submit-button {
+  background: #6759d9;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 0 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background: #5145cd;
+}
+
+/* Feedback */
+
+.feedback {
+  padding: 12px;
+  border-radius: 10px;
+  margin: 15px 0 0;
+  font-weight: bold;
+}
+
+.correct-feedback {
+  background: #ddf8e8;
+  color: #167846;
+}
+
+.incorrect-feedback {
+  background: #ffe2e2;
+  color: #b32828;
+}
+
+.empty-feedback {
+  background: #fff4d6;
+  color: #8b6200;
+}
+
+/* Navigation */
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.nav-button,
+.shuffle-button,
+.master-button,
+.main-button {
+  border: none;
+  border-radius: 11px;
+  padding: 13px 22px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav-button {
+  background: #222;
+  color: white;
+}
+
+.nav-button:disabled {
+  background: #ccc;
+  color: #777;
+  cursor: not-allowed;
+}
+
+.shuffle-button {
+  background: #e8e6ff;
+  color: #5145cd;
+}
+
+.shuffle-button:hover {
+  background: #dad7ff;
+}
+
+.master-button {
+  margin-top: 18px;
+  background: #dff7e8;
+  color: #13713f;
+}
+
+.master-button:hover {
+  background: #caefd8;
+}
+
+.main-button {
+  background: #6759d9;
+  color: white;
+  margin-top: 20px;
 }
 
 .hint {
-  margin-top: 20px;
   color: #888;
+  margin-top: 20px;
   font-size: 14px;
 }
 
-@media (max-width: 600px) {
+/* Mobile */
+
+@media (max-width: 700px) {
   h1 {
     font-size: 38px;
   }
 
-  .description {
-    font-size: 16px;
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .flashcard {
-    min-height: 280px;
+    min-height: 260px;
     padding: 25px;
   }
 
   .flashcard h2 {
-    font-size: 23px;
+    font-size: 22px;
   }
 
-  .next-button {
+  .input-row {
+    flex-direction: column;
+  }
+
+  .submit-button {
+    padding: 14px;
+  }
+
+  .navigation {
+    flex-direction: column;
+  }
+
+  .nav-button,
+  .shuffle-button,
+  .master-button {
     width: 100%;
   }
 }

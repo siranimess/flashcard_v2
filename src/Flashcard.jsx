@@ -18,7 +18,7 @@ function Flashcard({ card, flipped, setFlipped }) {
 
           <p className="flip-text">
             {flipped
-              ? "Click to see the question"
+              ? "Click to return to the question"
               : "Click to reveal the answer"}
           </p>
         </div>
