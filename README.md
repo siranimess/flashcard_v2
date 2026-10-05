@@ -67,9 +67,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='YOUR-GIF-LINK-HERE' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-GIF created with **ScreenToGif**
+<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/8272faebe19240268843146b29864d7e" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
