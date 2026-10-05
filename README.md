@@ -69,7 +69,6 @@ Here's a walkthrough of implemented user stories:
 
 <div>
     <a href="https://www.loom.com/share/8272faebe19240268843146b29864d7e">
-      <p>flashcard - 4 October 2026 - Watch Video</p>
     </a>
     <a href="https://www.loom.com/share/8272faebe19240268843146b29864d7e">
       <img style="max-width:300px;" src="https://www.loom.com/v1/videos/8272faebe19240268843146b29864d7e/thumbnail.gif">
