@@ -67,7 +67,14 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/8272faebe19240268843146b29864d7e" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+<div>
+    <a href="https://www.loom.com/share/8272faebe19240268843146b29864d7e">
+      <p>flashcard - 4 October 2026 - Watch Video</p>
+    </a>
+    <a href="https://www.loom.com/share/8272faebe19240268843146b29864d7e">
+      <img style="max-width:300px;" src="https://www.loom.com/v1/videos/8272faebe19240268843146b29864d7e/thumbnail.gif">
+    </a>
+  </div>
 
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
